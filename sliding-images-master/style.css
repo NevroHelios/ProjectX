@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: pixeboy;
+    src: url('pixeboy.ttf');
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(36, 33, 33);
+    overflow: hidden;
+}
+
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#image-track > .image:not(:hover) {
+    filter: grayscale(100%);
+}
+
+#image-track > .image:hover {
+    filter: none; /* Remove the grayscale filter on hover */
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#header {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(36, 33, 33);
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    position: relative;
+}
+
+#header h1 {
+    font-family: pixeboy;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+}
+
+#header p {
+    font-size: 4rem;
+}
+
+#modal-container {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#modal-content {
+    text-align: center;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+}
+
+#modal-image {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
