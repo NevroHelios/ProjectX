@@ -9,6 +9,13 @@
     src: url('pixeboy.ttf');
 }
 
+.image {
+    transition: filter 0.3s ease-in-out;
+}
+.image.desaturated {
+    filter: grayscale(100%);
+}
+
 body {
     min-height: 100vh;
     background-color: rgb(36, 33, 33);

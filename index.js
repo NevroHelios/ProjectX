@@ -57,6 +57,17 @@ window.onmousedown = (e) => {
     track.dataset.mouseDownAt = e.clientX;
 };
 
+const image = document.querySelector('.image');
+
+image.addEventListener('mouseenter', () => {
+  image.classList.remove('desaturated');
+});
+
+image.addEventListener('mouseleave', () => {
+  image.classList.add('desaturated');
+});
+
+
 window.onmousemove = (e) => {
     if (track.dataset.mouseDownAt === "0") return;
 
