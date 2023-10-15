@@ -2,7 +2,7 @@
 
 Welcome to ProjectX, the versatile connection hub that brings together traders, creatives, professionals, event planners, and like-minded individuals. ProjectX is not just an app; it's a vibrant fusion of ideas, passions, and opportunities. Discover a world where you can access trading news, engage in creative writing, network professionally, plan events, and connect with local interest groups, all in one place! 🌍✨
 
-## Why ProjectX Matters
+## Why ProjectX Matters:
 
 ProjectX is more than just another platform; it's a catalyst for personal and professional growth. Here's why it matters:
 
