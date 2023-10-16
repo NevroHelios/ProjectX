@@ -106,6 +106,4 @@ window.onmousemove = (e) => {
 window.onmouseup = () => {
     track.dataset.mouseDownAt = 0;
     track.dataset.prevPercentage = track.dataset.percentage;
-
-    
 };
